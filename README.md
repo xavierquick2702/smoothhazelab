@@ -1,4 +1,4 @@
-# ElectionManager-8c3b4b
+# ElectionManager-6469d8
 
 A Java ElectionManager utility.
 

